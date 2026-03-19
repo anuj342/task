@@ -10,8 +10,7 @@ REQUEST_COUNT = Counter("sensor_requests_total", "Total sensor requests")
 CPU_SPIKE = Gauge("sensor_cpu_spike", "Simulated CPU spike state")
 PROCESS_LATENCY = Histogram("sensor_processing_latency_seconds", "Processing time")
 
-# Custom metric (Task 3.4) — histogram of CPU spike duration
-# Useful for alerting when p99 spike duration exceeds safe threshold on robot hardware
+# Custom metric
 CPU_SPIKE_DURATION = Histogram(
     "sensor_cpu_spike_duration_seconds",
     "Duration of simulated CPU spike",

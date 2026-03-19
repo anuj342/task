@@ -2,7 +2,7 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-# Install only what's needed, no cache to keep image small
+# Installing only what's needed, no cache to keep image small
 RUN pip install --no-cache-dir flask prometheus_client gunicorn
 
 COPY sensor_service.py .

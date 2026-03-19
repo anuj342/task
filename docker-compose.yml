@@ -12,7 +12,7 @@ services:
   victoriametrics:
     image: victoriametrics/victoria-metrics:v1.101.0
     ports:
-      - "8428:8428"     # /vmui for UI, /api/v1/query for PromQL
+      - "8428:8428"
     volumes:
       - ./victoriametrics.yml:/etc/victoriametrics/scrape.yml
       - vm_data:/victoria-metrics-data
